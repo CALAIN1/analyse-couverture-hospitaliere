@@ -47,3 +47,20 @@ GROUP BY
     department_name
 ORDER BY 
     filtered_facilities_count DESC;
+
+---
+
+## Constats Clés de l'Analyse
+
+* **L'illusion brute :** Des départements comme le Pas-de-Calais ou la Seine-Maritime semblent idéalement dotés en volume brut d'établissements en raison d'une forte concentration de structures médico-sociales de type hébergement.
+* **La réalité filtrée :** Dès que le filtre métier "Médecine Active" est appliqué, les densités de lits s'effondrent (plafonnant à un maximum de 68,2 lits pour 100k hab.). La carte révèle instantanément les véritables zones de tension hospitalière.
+
+---
+
+## Perspectives d'Industrialisation
+
+* **Actualisation "One-Click" :** Le pipeline Power Query est configuré pour intégrer nativement les futures publications annuelles du fichier FINESS brut sans réécriture de code.
+* **Déploiement Cloud (Feuille de route) :** La publication sur Power BI Service est planifiée pour centraliser les KPIs sur un tableau de bord sécurisé, synchronisé et mobile pour les équipes de direction.
+
+---
+*Projet réalisé par Carole ALAIN — Expertise Data*
