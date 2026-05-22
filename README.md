@@ -47,6 +47,7 @@ GROUP BY
     department_name
 ORDER BY 
     filtered_facilities_count DESC;
+```
 
 ---
 
