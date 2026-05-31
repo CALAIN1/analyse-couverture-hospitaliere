@@ -28,6 +28,7 @@ Le projet est modélisé de bout en bout (End-to-End) selon l'architecture suiva
 
 ```sql
 -- Requête d'analyse Ciblée (Vision "Vrais Soins" - Filtrée au niveau de la base)
+-- Note : ce libellé englobe CHR et CHRU dans la base FINESS
 SELECT 
     department_code,
     department_name,
@@ -54,7 +55,7 @@ ORDER BY
 ## Constats Clés de l'Analyse
 
 * **L'illusion brute :** Des départements comme le Pas-de-Calais ou la Seine-Maritime semblent idéalement dotés en volume brut d'établissements en raison d'une forte concentration de structures médico-sociales de type hébergement.
-* **La réalité filtrée :** Dès que le filtre métier "Médecine Active" est appliqué, les densités de lits s'effondrent (plafonnant à un maximum de 68,2 lits pour 100k hab.). La carte révèle instantanément les véritables zones de tension hospitalière.
+* **La réalité filtrée :** Dès que le filtre métier "Médecine Active" est appliqué, les densités d'établissements s'effondrent (plafonnant à un maximum de 10,33 établissements pour 100k hab.). La carte révèle instantanément les véritables zones de tension hospitalière.
 
 ---
 
